@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -19,11 +20,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-align: center;
 }
-
+.Wheel{
+  position: relative;
+  top: 30%; 
+  left: 11%;
+  right: 11%;   
+  margin-left: auto; 
+  margin-right: auto;
+  
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  animation: fadeIn 1s;
+  
+}
+h2 {animation: fadeIn 500ms;}
+.text{
+  width: 100%;
+  font-size: calc(20px + 2vmin);
+  color: white;
+  border: solid white 1px;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +56,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
